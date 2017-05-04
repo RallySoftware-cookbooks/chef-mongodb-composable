@@ -9,7 +9,7 @@ class Chef
         @action = :enable
         @allowed_actions = [:enable, :disable]
         @run_context = run_context
-        @run_context.include_recipe("runit")
+        @run_context.include_recipe('runit')
 
         @user = 'mongodb'
         @group = 'mongodb'
